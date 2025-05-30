@@ -8,15 +8,17 @@ struct ComposeView: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        // No-op
     }
 }
 
 struct ContentView: View {
     var body: some View {
-        ComposeView()
-            .ignoresSafeArea(.keyboard) // Compose has own keyboard handler
+        VStack {
+            ComposeView()
+                .ignoresSafeArea(.keyboard) // Compose has its own keyboard handler
+            Text("This is klib used in iosApp")
+            Text("\(RNGKWrapper().generate(min: 3, max: 10))")
+        }
     }
 }
-
-
-
