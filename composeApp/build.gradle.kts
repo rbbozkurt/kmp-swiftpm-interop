@@ -2,6 +2,7 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
@@ -10,6 +11,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeHotReload)
+
 }
 
 kotlin {
@@ -20,6 +22,8 @@ kotlin {
         }
     }
 
+    val xcFramework = XCFramework("ComposeApp")
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -28,8 +32,23 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
             isStatic = true
+            xcFramework.add(this)
         }
+
+        iosTarget.compilations.getByName("main") {
+            val RNG by cinterops.creating {
+                definitionFile.set(project.file("src/nativeInterop/cinterop/RNG.def"))
+                includeDirs(project.file("${rootDir}/RNG/Sources/RNG/include"))
+            }
+        }
+
+
+
+
+
+
     }
+
 
     jvm("desktop")
 

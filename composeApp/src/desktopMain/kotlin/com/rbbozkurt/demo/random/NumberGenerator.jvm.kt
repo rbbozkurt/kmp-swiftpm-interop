@@ -1,7 +1,14 @@
 package com.rbbozkurt.demo.random
 
-actual class NumberGenerator {
-    actual fun generate(min: Int, max: Int): Int {
-        return kotlin.math.max(max, min)
+import kotlin.random.Random
+
+
+class JVMNumberGenerator : NumberGenerator {
+    override fun generate(min: Int, max: Int): Int {
+        return Random.nextInt(from = min, until = max + 1)
     }
 }
+
+
+
+actual fun getNumberGenerator(): NumberGenerator = JVMNumberGenerator()

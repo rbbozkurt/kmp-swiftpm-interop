@@ -1,0 +1,4 @@
+module RNG {
+    header "RandomNumberGenerator.h"
+    export *
+}
