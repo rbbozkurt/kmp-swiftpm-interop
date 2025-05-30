@@ -1,0 +1,4 @@
+language = Objective-C
+headers = RNGSwift.h
+package = RNGSwift
+compilerOpts = -I../../../../SwiftPMPackages/RNGSwift/Sources/RNGSwift/include

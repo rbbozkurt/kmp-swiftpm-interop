@@ -1,7 +1,6 @@
 import UIKit
 import SwiftUI
 import ComposeApp
-import RNG
 
 struct ComposeView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
