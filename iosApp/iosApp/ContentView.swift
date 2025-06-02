@@ -17,8 +17,6 @@ struct ContentView: View {
         VStack {
             ComposeView()
                 .ignoresSafeArea(.keyboard) // Compose has its own keyboard handler
-            Text("This is klib used in iosApp")
-            Text("\(RNGKWrapper().generate(min: 3, max: 10))")
         }
     }
 }

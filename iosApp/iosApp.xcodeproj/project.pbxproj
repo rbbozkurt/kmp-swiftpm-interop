@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		291BF0FD2DEA2C08005E18F6 /* RNG in Frameworks */ = {isa = PBXBuildFile; productRef = 294EEA232DE8FB8300D5F025 /* RNG */; };
-		291BF10F2DEA2CE3005E18F6 /* RNGSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 291BF10E2DEA2CE3005E18F6 /* RNGSwift */; };
-		291BF11D2DEA2F49005E18F6 /* ComposeApp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291BF11C2DEA2F49005E18F6 /* ComposeApp.xcframework */; };
-		291BF11E2DEA2F49005E18F6 /* ComposeApp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291BF11C2DEA2F49005E18F6 /* ComposeApp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		291C7CDB2DED0A970016B7D7 /* ComposeApp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291C7CDA2DED0A970016B7D7 /* ComposeApp.xcframework */; };
+		291C7CDC2DED0A970016B7D7 /* ComposeApp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291C7CDA2DED0A970016B7D7 /* ComposeApp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,7 +18,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				291BF11E2DEA2F49005E18F6 /* ComposeApp.xcframework in Embed Frameworks */,
+				291C7CDC2DED0A970016B7D7 /* ComposeApp.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		291BF11C2DEA2F49005E18F6 /* ComposeApp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ComposeApp.xcframework; path = ../composeApp/build/XCFrameworks/debug/ComposeApp.xcframework; sourceTree = "<group>"; };
+		291C7CDA2DED0A970016B7D7 /* ComposeApp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ComposeApp.xcframework; path = ../composeApp/build/XCFrameworks/debug/ComposeApp.xcframework; sourceTree = "<group>"; };
 		B9DA97B12DC1472C00A4DA20 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,9 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291BF0FD2DEA2C08005E18F6 /* RNG in Frameworks */,
-				291BF10F2DEA2CE3005E18F6 /* RNGSwift in Frameworks */,
-				291BF11D2DEA2F49005E18F6 /* ComposeApp.xcframework in Frameworks */,
+				291C7CDB2DED0A970016B7D7 /* ComposeApp.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +71,7 @@
 		294EE9F02DE8C0A400D5F025 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				291BF11C2DEA2F49005E18F6 /* ComposeApp.xcframework */,
+				291C7CDA2DED0A970016B7D7 /* ComposeApp.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,9 +115,6 @@
 			);
 			name = iosApp;
 			packageProductDependencies = (
-				294EEA232DE8FB8300D5F025 /* RNG */,
-				291BF10B2DEA2CD7005E18F6 /* RNG */,
-				291BF10E2DEA2CE3005E18F6 /* RNGSwift */,
 			);
 			productName = iosApp;
 			productReference = B9DA97B12DC1472C00A4DA20 /* demo.app */;
@@ -152,8 +145,7 @@
 			mainGroup = B9DA97A82DC1472C00A4DA20;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				291BF10A2DEA2CD7005E18F6 /* XCLocalSwiftPackageReference "../RNG" */,
-				291BF10D2DEA2CE3005E18F6 /* XCLocalSwiftPackageReference "../SwiftPMPackages/RNGSwift" */,
+				291C7CC92DED00480016B7D7 /* XCLocalSwiftPackageReference "../SwiftPMPackages/SwiftPackage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9DA97B22DC1472C00A4DA20 /* Products */;
@@ -396,30 +388,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		291BF10A2DEA2CD7005E18F6 /* XCLocalSwiftPackageReference "../RNG" */ = {
+		291C7CC92DED00480016B7D7 /* XCLocalSwiftPackageReference "../SwiftPMPackages/SwiftPackage" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../RNG;
-		};
-		291BF10D2DEA2CE3005E18F6 /* XCLocalSwiftPackageReference "../SwiftPMPackages/RNGSwift" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../SwiftPMPackages/RNGSwift;
+			relativePath = ../SwiftPMPackages/SwiftPackage;
 		};
 /* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		291BF10B2DEA2CD7005E18F6 /* RNG */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RNG;
-		};
-		291BF10E2DEA2CE3005E18F6 /* RNGSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RNGSwift;
-		};
-		294EEA232DE8FB8300D5F025 /* RNG */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RNG;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9DA97A92DC1472C00A4DA20 /* Project object */;
 }

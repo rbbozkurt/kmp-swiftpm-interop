@@ -1,4 +1,0 @@
-language = Objective-C
-headers = RandomNumberGenerator.h
-package = RNG
-compilerOpts = -I../../../../RNG/Sources/RNG/include

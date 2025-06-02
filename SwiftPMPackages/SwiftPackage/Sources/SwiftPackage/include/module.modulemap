@@ -1,0 +1,4 @@
+module SwiftPackage {
+    header "SwiftPackage.h"
+    export *
+}

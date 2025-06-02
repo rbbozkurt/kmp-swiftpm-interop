@@ -36,23 +36,13 @@ kotlin {
         }
 
         iosTarget.compilations.getByName("main") {
-            val RNG by cinterops.creating {
-                definitionFile.set(project.file("src/nativeInterop/cinterop/RNG.def"))
-                includeDirs(project.file("${rootDir}/RNG/Sources/RNG/include"))
-            }
+            val SwiftPackage by cinterops.creating{
+                definitionFile.set(project.file("src/nativeInterop/cinterop/SwiftPackage.def"))
+                includeDirs(project.file("${rootDir}/SwiftPMPackages/SwiftPackage/Sources/SwiftPackage/include"))
 
-            val RNGSwift by cinterops.creating {
-                definitionFile.set(project.file("src/nativeInterop/cinterop/RNGSwift.def"))
-                includeDirs(project.file("${rootDir}/SwiftPMPackages/RNGSwift/Sources/RNGSwift/include"))
             }
 
         }
-
-
-
-
-
-
     }
 
 
