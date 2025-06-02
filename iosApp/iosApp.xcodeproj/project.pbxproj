@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		291C7CDB2DED0A970016B7D7 /* ComposeApp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291C7CDA2DED0A970016B7D7 /* ComposeApp.xcframework */; };
 		291C7CDC2DED0A970016B7D7 /* ComposeApp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 291C7CDA2DED0A970016B7D7 /* ComposeApp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		295448812DEDEC9800A2908A /* SwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 295448802DEDEC9800A2908A /* SwiftPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291C7CDB2DED0A970016B7D7 /* ComposeApp.xcframework in Frameworks */,
+				295448812DEDEC9800A2908A /* SwiftPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,7 @@
 			);
 			name = iosApp;
 			packageProductDependencies = (
+				295448802DEDEC9800A2908A /* SwiftPackage */,
 			);
 			productName = iosApp;
 			productReference = B9DA97B12DC1472C00A4DA20 /* demo.app */;
@@ -145,7 +148,7 @@
 			mainGroup = B9DA97A82DC1472C00A4DA20;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				291C7CC92DED00480016B7D7 /* XCLocalSwiftPackageReference "../SwiftPMPackages/SwiftPackage" */,
+				2954487F2DEDEC9800A2908A /* XCLocalSwiftPackageReference "../SwiftPMPackages/SwiftPackage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9DA97B22DC1472C00A4DA20 /* Products */;
@@ -388,11 +391,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		291C7CC92DED00480016B7D7 /* XCLocalSwiftPackageReference "../SwiftPMPackages/SwiftPackage" */ = {
+		2954487F2DEDEC9800A2908A /* XCLocalSwiftPackageReference "../SwiftPMPackages/SwiftPackage" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../SwiftPMPackages/SwiftPackage;
 		};
 /* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		295448802DEDEC9800A2908A /* SwiftPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9DA97A92DC1472C00A4DA20 /* Project object */;
 }
