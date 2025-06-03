@@ -1,13 +1,1 @@
-//
-//  SwiftPackage.h
-//  SwiftPackage
-//
-//  Created by Resit Berkay Bozkurt on 02.06.25.
-//
-#import <Foundation/Foundation.h>
-
-@interface SwiftPackageObjC : NSObject
-@property (nonatomic, strong) NSString *desc;
-- (NSString *)describe;
-
-@end
+../SwiftPackageObjC.h

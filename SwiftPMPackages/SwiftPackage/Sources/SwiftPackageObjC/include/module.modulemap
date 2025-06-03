@@ -1,4 +1,10 @@
+// module.modulemap
+// Exposes the public Objective-C API for SwiftPackage to Kotlin/Native via cinterop
+
 module SwiftPackage {
+    // Public header to be exposed
     header "SwiftPackageObjC.h"
+
+    // Export all symbols from the header
     export *
 }
