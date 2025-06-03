@@ -6,7 +6,7 @@ import Foundation
 import ComposeApp
 
 @objc public class DummyPackageIOS: NSObject {
-    private let dummyKmpPackage = DummyIosPackage()
+    private let dummyKmpPackage = DummyPackage_iosKt.getDummyPackage()
     private let desc = "This is iOS App code"
 
     @objc public func describe() -> String {

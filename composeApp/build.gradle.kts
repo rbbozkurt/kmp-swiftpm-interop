@@ -38,7 +38,7 @@ kotlin {
         iosTarget.compilations.getByName("main") {
             val SwiftPackage by cinterops.creating{
                 definitionFile.set(project.file("src/nativeInterop/cinterop/SwiftPackage.def"))
-                includeDirs(project.file("${rootDir}/SwiftPMPackages/SwiftPackage/Sources/SwiftPackage/include"))
+                includeDirs(project.file("${rootDir}/SwiftPMPackages/SwiftPackage/Sources/SwiftPackageObjC/include"))
 
             }
 
