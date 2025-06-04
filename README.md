@@ -164,9 +164,9 @@ Key enabling mechanism:
 
 - Kotlin/Native can use these Objective-C APIs via CInterop.
 
-This creates the following valid interop chain:
+This creates the following valid transitive ginterop chain:
 ```text
- (Kotlin/Native ↔ ObjC) AND (ObjC ↔ Swift) => (Kotlin/Native ↔ ObjC ↔ Swift) => Kotlin/Native ↔ Swift
+(Kotlin/Native ↔ ObjC) ∧ (ObjC ↔ Swift) ⇒ (Kotlin/Native ↔ Swift)
  ```
 
 See following documentations/resources to learn/understand more about the interop:
