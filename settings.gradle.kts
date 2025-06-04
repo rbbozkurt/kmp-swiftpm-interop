@@ -1,4 +1,4 @@
-rootProject.name = "demo"
+rootProject.name = "kmp-swiftpm-interop"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
