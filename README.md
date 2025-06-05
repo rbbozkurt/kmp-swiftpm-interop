@@ -124,15 +124,22 @@ While wrapping Kotlin logic in Swift is optional, doing so helps encapsulate int
 This class acts as a bridge between the Swift-based UI and the Kotlin business logic, which itself indirectly invokes SwiftPM logic via the Objective-C wrapper.
 
 ## Demo Videos 
-### iOS App
-Shows SwiftUI app consuming Kotlin XCFramework that wraps SwiftPM logic.
-![iOS App Demo](media/ios-demo.gif) 
 
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
 
-### Android App
-Demonstrates the same shared logic used natively on Android.
-![Android App Demo](media/android-demo.gif)
+<div style="flex: 1;">
+<h3>iOS App</h3>
+<p>Shows SwiftUI app consuming Kotlin XCFramework that wraps SwiftPM.</p>
+<img src="media/ios-demo.gif" alt="iOS App Demo" width="100%" />
+</div>
 
+<div style="flex: 1;">
+<h3>Android App</h3>
+<p>Demonstrates the same shared logic used natively on Android.</p>
+<img src="media/android-demo.gif" alt="Android App Demo" width="100%" />
+</div>
+
+</div>
 
 
 
