@@ -394,6 +394,8 @@ kotlinInterop {
 
 ```
 
+- See similar implementation here : [GitHub Link.](https://github.com/PaGr0m/kotlin-spm-plugin)
+
 ---
 
 ## Conclusion
